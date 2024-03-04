@@ -35,6 +35,7 @@ input {
     font-size: 16px;
     text-align: center;
     transition: border-color 0.3s ease;
+    box-sizing: border-box;
 }
 
 input:focus {
@@ -55,4 +56,32 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+#cardName {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#result {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.valid-credit-cards {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-height: 200px; 
+    overflow-y: auto; 
+}
+
+.valid-credit-cards p {
+    margin: 5px 0;
 }
