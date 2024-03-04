@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Validação de Cartão de Crédito</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Validador de Cartão de Crédito</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Validação de Cartão de Crédito</h1>
-        <input type="text" id="creditCardNumber" placeholder="Digite o número do cartão de crédito (16 dígitos)">
-        <button onclick="validateCreditCard()">Validar</button>
-        <p id="result"></p>
+        <h1>Validador de Cartão de Crédito</h1>
+        <form id="creditForm">
+            <label for="creditNumber">Número do Cartão de Crédito:</label>
+            <input type="text" id="creditNumber" name="creditNumber">
+            <button type="submit">Validar</button>
+        </form>
+        <div id="cardName"></div>
+        <div id="result"></div>
+        <div id="validCreditCards" class="valid-credit-cards"></div> <!-- Espaço para exibir os números dos cartões de crédito válidos -->
     </div>
 
     <script src="script.js"></script>
